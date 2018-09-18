@@ -1,9 +1,9 @@
 import React from 'react';
 import FormField from './FormField';
 
-export default (BaseComponent, fieldProps = {}) => {
+export default BaseComponent => {
     const WithFormField = props => (
-        <FormField component={BaseComponent} {...fieldProps} {...props} />
+        <FormField component={BaseComponent} {...props} />
     );
     return WithFormField;
 };
