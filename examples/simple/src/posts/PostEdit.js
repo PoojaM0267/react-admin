@@ -8,6 +8,7 @@ import {
     Datagrid,
     DateField,
     DateInput,
+    DateTimeInput,
     DisabledInput,
     Edit,
     CardActions,
@@ -92,7 +93,10 @@ const PostEdit = props => (
                         <TextInput source="url" />
                     </SimpleFormIterator>
                 </ArrayInput>
-                <DateInput source="published_at" options={{ locale: 'pt' }} />
+                <DateTimeInput
+                    source="published_at"
+                    options={{ locale: 'pt' }}
+                />
                 <SelectInput
                     resettable
                     source="category"

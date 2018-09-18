@@ -70,7 +70,7 @@ const PostShow = props => (
                                 <ChipField source="name" />
                             </SingleFieldList>
                         </ReferenceArrayField>
-                        <DateField source="published_at" />
+                        <DateField source="published_at" showTime />
                         <SelectField
                             source="category"
                             choices={[

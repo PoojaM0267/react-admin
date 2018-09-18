@@ -436,7 +436,7 @@ Refer to [Material UI Checkbox documentation](http://www.material-ui.com/#/compo
 
 ## `<DateInput>`
 
-Ideal for editing dates, `<DateInput>` renders a standard browser [Date Picker](http://www.material-ui.com/#/components/date-picker).
+Ideal for editing dates, `<DateInput>` renders a standard browser [Date Picker](https://material-ui.com/demos/pickers/#date-pickers), so the appearance depends on the browser (and falls back to a text input on safari).
 
 ```jsx
 import { DateInput } from 'react-admin';
@@ -445,6 +445,16 @@ import { DateInput } from 'react-admin';
 ```
 
 ![DateInput](./img/date-input.gif)
+
+## `<DateTimeInput>`
+
+An input for editing dates with time. `<DateTimeInput>` renders a standard browser [Date and Time Picker](https://material-ui.com/demos/pickers/#date-amp-time-pickers), so the appearance depends on the browser (and falls back to a text input on safari).
+
+```jsx
+import { DateTimeInput } from 'react-admin';
+
+<DateTimeInput source="published_at" />
+```
 
 ## `<DisabledInput>`
 

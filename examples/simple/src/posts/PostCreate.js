@@ -8,6 +8,7 @@ import {
     BooleanInput,
     Create,
     DateInput,
+    DateTimeInput,
     FormDataConsumer,
     LongTextInput,
     NumberInput,
@@ -108,7 +109,10 @@ const PostCreate = ({ permissions, ...props }) => (
                     )
                 }
             </FormDataConsumer>
-            <DateInput source="published_at" defaultValue={getDefaultDate} />
+            <DateTimeInput
+                source="published_at"
+                defaultValue={getDefaultDate}
+            />
             <BooleanInput source="commentable" defaultValue />
             <ArrayInput
                 source="backlinks"
